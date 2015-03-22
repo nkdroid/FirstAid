@@ -38,6 +38,8 @@ public class HomeActivity extends ActionBarActivity {
                 startActivity(intent);
             }
         });
+
+
         setToolbar();
         initView();
         getRegId();
