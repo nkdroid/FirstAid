@@ -21,6 +21,7 @@ import java.io.IOException;
 public class HomeActivity extends ActionBarActivity {
     private Toolbar toolbar;
     private Button btnLogout;
+
     private GoogleCloudMessaging gcm;
     private String regid;
     private LinearLayout firstItem;
