@@ -1,14 +1,34 @@
 package com.nkdroid.firstaid;
 
-/**
- * Created by Android on 18-03-2015.
- */
 public class User {
 
     public boolean isLogin=false;
 
     private String username;
     private String password;
+    public String hname;
+    public String haddr;
+    public String phoneno;
+    public String type,latitude,services,opentime,closetime,closeddays;
+    public String longitude;
+
+    public User(){}
+
+    public User(String hname,String haddr,String phoneno,String type,String latitude,String longitude,String services,String opentime,String closetime,String closeddays) {
+        super();
+        this.hname = hname;
+        this.haddr = haddr;
+        this.phoneno = phoneno;
+        this.type = type;
+        this.latitude = latitude;
+        this.longitude = longitude;
+        this.services = services;
+        this.opentime = opentime;
+        this.closetime = closetime;
+        this.closeddays = closeddays;
+
+    }
+
 
     public boolean isLogin() {
         return isLogin;

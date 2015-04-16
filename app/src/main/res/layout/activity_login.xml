@@ -2,45 +2,53 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+       tools:context="com.nkdroid.registrationlogin.LoginActivity"
+    >
 
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-
-    tools:context="com.nkdroid.registrationlogin.LoginActivity">
-
-    <TextView
-        android:text="Login Form"
-        android:textSize="22sp"
-        android:textColor="#494949"
-        android:gravity="center"
+    <ImageView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-    <LinearLayout
+        android:layout_height="match_parent"
+        android:id="@+id/bg1"/>
+
+    `<LinearLayout
         android:layout_centerInParent="true"
         android:layout_width="match_parent"
         android:orientation="vertical"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        >
 
-
+        <ImageView
+            android:id="@+id/logo"
+            android:src="@drawable/firstaidlogosmall"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            android:layout_gravity="center"
+            >
+        </ImageView>
         <EditText
             android:id="@+id/etUsername"
             android:layout_marginTop="8dp"
-            android:hint="Enter Username"
+            android:hint="Email"
             android:textSize="22sp"
             android:textColor="#494949"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"/>
 
         <EditText
             android:id="@+id/etPassword"
             android:layout_marginTop="8dp"
-            android:hint="Enter Password"
+            android:hint="Password"
             android:textSize="22sp"
             android:textColor="#494949"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:password="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"/>
 
         <Button
             android:layout_gravity="center"
@@ -48,20 +56,36 @@
             android:layout_marginTop="8dp"
             android:text="Login"
             android:textSize="22sp"
-            android:textColor="#494949"
+            android:textColor="#ffffff"
             android:gravity="center"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:background="@drawable/background_tab_pink"          />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--OR--"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            />
+
+        <Button
+
+            android:id="@+id/btnNewRegistration"
+            android:text="Register Here"
+            android:textSize="22sp"
+            android:textColor="#ffffff"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_tab_pink"/>
+
     </LinearLayout>
-    <Button
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/btnNewRegistration"
-        android:layout_marginTop="8dp"
-        android:text="New Registration"
-        android:textSize="22sp"
-        android:textColor="#494949"
-        android:gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+
 </RelativeLayout>

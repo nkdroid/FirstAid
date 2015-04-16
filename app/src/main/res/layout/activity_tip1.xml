@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.nkdroid.firstaid.Tip1Activity"
+
+    >
+    <include layout="@layout/app_bar">
+
+    </include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:id="@+id/imgTipOne"
+                android:src="@drawable/heartattack"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/descTitleHeart"
+                android:text="Heart Attack"
+                android:textSize="25dp"
+                android:padding="10dp"
+                android:layout_marginLeft="90dp"
+                android:textColor="#ba3e5b"
+                />
+
+
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/txtDescHeart"
+                android:textSize="21dp"
+                android:text="description"
+                android:padding="10dp"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/txtBtnTip"
+                    android:text="Tips"
+                    android:textAlignment="center"
+                    android:padding="10dp"
+                    android:background="#4CAF50"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    android:gravity="center"
+
+                    />
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtBtnFaq"
+                    android:text="FAQ"
+                    android:padding="10dp"
+                    android:background="#4CAF50"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+</RelativeLayout>

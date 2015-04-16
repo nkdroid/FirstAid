@@ -9,67 +9,63 @@
     <include layout="@layout/app_bar"/>
 
 
-        <Button
-            android:layout_gravity="center"
-            android:id="@+id/btnLogout"
-            android:layout_marginTop="8dp"
-            android:text="Logout"
-            android:textSize="22sp"
-            android:textColor="#494949"
-            android:gravity="center"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
     <LinearLayout
         android:layout_weight="1"
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="0dp">
         <LinearLayout
-            android:id="@+id/firstItem"
+
             android:layout_weight="1"
             android:orientation="horizontal"
             android:layout_width="0dp"
             android:gravity="center"
             android:layout_height="match_parent">
             <LinearLayout
+                android:id="@+id/secondItem"
                 android:orientation="vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
                 <ImageView
-                    android:src="@mipmap/ic_launcher"
+                    android:src="@drawable/healing"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imgTips"/>
                 <TextView
                     android:layout_gravity="center"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:textSize="18sp"
-                    android:text="title"/>
+                    android:text="Tips"/>
             </LinearLayout>
 
         </LinearLayout>
         <LinearLayout
+
             android:layout_weight="1"
             android:orientation="horizontal"
             android:layout_width="0dp"
             android:gravity="center"
             android:layout_height="match_parent">
             <LinearLayout
+                android:id="@+id/thirdItem"
                 android:orientation="vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
                 <ImageView
-                    android:src="@mipmap/ic_launcher"
+                    android:src="@drawable/assignment"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imgSymptoms"/>
                 <TextView
                     android:layout_gravity="center"
+
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:textSize="18sp"
-                    android:text="title"/>
+                    android:text="Symptoms"/>
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
@@ -80,49 +76,58 @@
         android:layout_width="match_parent"
         android:layout_height="0dp">
         <LinearLayout
+
             android:layout_weight="1"
             android:orientation="horizontal"
             android:layout_width="0dp"
             android:gravity="center"
             android:layout_height="match_parent">
             <LinearLayout
+                android:id="@+id/forthItem"
                 android:orientation="vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
                 <ImageView
-                    android:src="@mipmap/ic_launcher"
+                    android:src="@drawable/panorama"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imgDisaster"
+                    android:layout_gravity="center"
+
+                    />
                 <TextView
                     android:layout_gravity="center"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:textSize="18sp"
-                    android:text="title"/>
+                    android:text="Natural Disaster"/>
             </LinearLayout>
         </LinearLayout>
         <LinearLayout
+
             android:layout_weight="1"
             android:orientation="horizontal"
             android:layout_width="0dp"
             android:gravity="center"
             android:layout_height="match_parent">
             <LinearLayout
+                android:id="@+id/fifthItem"
                 android:orientation="vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
                 <ImageView
-                    android:src="@mipmap/ic_launcher"
+                    android:src="@drawable/conveniencestore"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imgHospital"/>
                 <TextView
                     android:layout_gravity="center"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:textSize="18sp"
-                    android:text="title"/>
+                    android:text="Hospital"/>
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
@@ -133,103 +138,70 @@
         android:layout_width="match_parent"
         android:layout_height="0dp">
         <LinearLayout
+
             android:layout_weight="1"
             android:orientation="horizontal"
             android:layout_width="0dp"
             android:gravity="center"
             android:layout_height="match_parent">
             <LinearLayout
+                android:id="@+id/sixthItem"
                 android:orientation="vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
                 <ImageView
-                    android:src="@mipmap/ic_launcher"
+                    android:src="@drawable/announcement"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imgAnnoucement"/>
                 <TextView
                     android:layout_gravity="center"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:textSize="18sp"
-                    android:text="title"/>
+                    android:text="Notification"/>
             </LinearLayout>
         </LinearLayout>
         <LinearLayout
+
             android:layout_weight="1"
             android:orientation="horizontal"
             android:layout_width="0dp"
             android:gravity="center"
             android:layout_height="match_parent">
             <LinearLayout
+                android:id="@+id/seventhItem"
                 android:orientation="vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
                 <ImageView
-                    android:src="@mipmap/ic_launcher"
+                    android:src="@drawable/list"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imgMore" />
                 <TextView
                     android:layout_gravity="center"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:textSize="18sp"
-                    android:text="title"/>
+                    android:text="More"/>
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_weight="1"
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="0dp">
-        <LinearLayout
-            android:layout_weight="1"
-            android:orientation="horizontal"
-            android:layout_width="0dp"
-            android:gravity="center"
-            android:layout_height="match_parent">
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-                <ImageView
-                    android:src="@mipmap/ic_launcher"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-                <TextView
-                    android:layout_gravity="center"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:textSize="18sp"
-                    android:text="title"/>
-            </LinearLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_weight="1"
-            android:orientation="horizontal"
-            android:layout_width="0dp"
-            android:gravity="center"
-            android:layout_height="match_parent">
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-                <ImageView
-                    android:src="@mipmap/ic_launcher"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-                <TextView
-                    android:layout_gravity="center"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:textSize="18sp"
-                    android:text="title"/>
-            </LinearLayout>
-        </LinearLayout>
-    </LinearLayout>
+
+   <Button
+        android:layout_gravity="center"
+        android:id="@+id/btnLogout"
+        android:layout_marginTop="8dp"
+        android:text="Logout"
+        android:textSize="22sp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_tab_pink"/>
+
 </LinearLayout>

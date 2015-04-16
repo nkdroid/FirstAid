@@ -21,29 +21,64 @@ import java.io.IOException;
 public class HomeActivity extends ActionBarActivity {
     private Toolbar toolbar;
     private Button btnLogout;
-
     private GoogleCloudMessaging gcm;
     private String regid;
-    private LinearLayout firstItem;
+    private LinearLayout thirdItem, forthItem,sixthItem,fifthItem,secondItem;
     private String PROJECT_NUMBER = "92884720384";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        firstItem= (LinearLayout) findViewById(R.id.firstItem);
-        firstItem.setOnClickListener(new View.OnClickListener() {
+        thirdItem= (LinearLayout) findViewById(R.id.thirdItem);
+        thirdItem.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(HomeActivity.this, LearnActivity.class);
+                Intent intent = new Intent(HomeActivity.this, SymptomsActivity.class);
                 startActivity(intent);
             }
         });
 
+        forthItem= (LinearLayout) findViewById(R.id.forthItem);
+        forthItem.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeActivity.this, DisasterActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        secondItem= (LinearLayout) findViewById(R.id.secondItem);
+        secondItem.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeActivity.this, TipsActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        sixthItem = (LinearLayout) findViewById(R.id.sixthItem);
+        sixthItem.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent1 = new Intent(HomeActivity.this, AnnouncementActivity.class);
+                startActivity(intent1);
+            }
+        });
+
+        fifthItem = (LinearLayout) findViewById(R.id.fifthItem);
+        fifthItem.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent2 = new Intent(HomeActivity.this, HospitalActivity.class);
+                startActivity(intent2);
+            }
+        });
 
         setToolbar();
         initView();
         getRegId();
+
     }
 
     private void initView() {
@@ -63,7 +98,7 @@ public class HomeActivity extends ActionBarActivity {
     private void setToolbar() {
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         if (toolbar != null) {
-            toolbar.setTitle("HOME");
+            toolbar.setTitle("24*7 First Aid");
             setSupportActionBar(toolbar);
         }
     }
